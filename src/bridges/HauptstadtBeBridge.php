@@ -9,7 +9,7 @@ class HauptstadtBeBridge extends BridgeAbstract
 
     public function collectData()
     {
-        // TODO implement this
+        // TODO implement this: Read JSON, loop, output items.
         $item = array(); // Create an empty item
 
         $item['title'] = 'Hello World!';
