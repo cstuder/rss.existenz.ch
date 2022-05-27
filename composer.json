@@ -1,0 +1,13 @@
+{
+  "name": "cstuder/rss.existenz.ch",
+  "description": "Handgemachte RSS-Feeds",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Studer",
+      "email": "cstuder@existenz.ch"
+    }
+  ],
+  "require": {}
+}
