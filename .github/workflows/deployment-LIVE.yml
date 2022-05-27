@@ -16,7 +16,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           command: create-project
-          only_args: rss-bridge/rss-bridge ${{ github.workspace }}/public/feeds/ --no-dev
+          only_args: -vvv rss-bridge/rss-bridge ${{ github.workspace }}/public/feeds/ --no-dev --prefer-dist
 
       - name: Show directory
         run: sudo apt-get install -y && tree ${{ github.workspace }}
