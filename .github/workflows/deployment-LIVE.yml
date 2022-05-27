@@ -20,8 +20,8 @@ jobs:
 
       - name: Copy bridges & config
         run: |
-          cp $GITHUB_WORKSPACE/src/bridges/*.php $GITHUB_WORKSPACE/public/feeds/bridges/
-          cp $GITHUB_WORKSPACE/src/config/* $GITHUB_WORKSPACE/public/feeds/
+          cp ${{ env.GITHUB_WORKSPACE }}/src/bridges/*.php ${{ env.GITHUB_WORKSPACE }}/public/feeds/bridges/
+          cp ${{ env.GITHUB_WORKSPACE }}/src/config/* ${{ env.GITHUB_WORKSPACE }}/public/feeds/
 
       - name: rsync
         uses: burnett01/rsync-deployments@5.2
