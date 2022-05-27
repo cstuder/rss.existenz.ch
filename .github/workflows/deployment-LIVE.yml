@@ -21,6 +21,9 @@ jobs:
       - name: Show directory
         run: sudo apt-get install -y && tree ${{ github.workspace }}
 
+      - name: Output
+        run: echo ${{ github.workspace }}/output.log
+
       # - name: Copy bridges & config
       #   run: |
       #     cp ${{ github.workspace }}/src/bridges/*.php ${{ github.workspace }}/public/feeds/bridges/
