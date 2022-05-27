@@ -16,7 +16,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           command: create-project
-          args: rss-bridge/rss-bridge ${{ github.workspace }}/public/feeds/ --no-dev
+          only_args: rss-bridge/rss-bridge ${{ github.workspace }}/public/feeds/ --no-dev
 
       - name: Show directory
         run: sudo apt-get install -y && tree ${{ github.workspace }}
@@ -29,7 +29,7 @@ jobs:
       - name: rsync
         uses: burnett01/rsync-deployments@5.2
         with:
-          path: public
+          path: public/
           switches: -avzr
           remote_path: ${{ secrets.RSS_SSH_REMOTE_PATH_LIVE }}
           remote_host: ${{ secrets.RSS_SSH_HOST }}
