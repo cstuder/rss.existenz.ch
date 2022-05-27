@@ -28,7 +28,7 @@ jobs:
         with:
           path: public/
           switches: -avzr --delete
-          remote_path: ${{ secrets.RSS_SSH_REMOTE_PATH_LIVE }}
+          remote_path: /
           remote_host: ${{ secrets.RSS_SSH_HOST }}
           remote_user: ${{ secrets.RSS_SSH_USER }}
           remote_key: ${{ secrets.RSS_SSH_PRIVATE_KEY }}
