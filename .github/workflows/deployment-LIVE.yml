@@ -18,10 +18,13 @@ jobs:
           command: create-project
           args: rss-bridge/rss-bridge ${{ github.workspace }}/public/feeds/ --no-dev
 
-      - name: Copy bridges & config
-        run: |
-          cp ${{ github.workspace }}/src/bridges/*.php ${{ github.workspace }}/public/feeds/bridges/
-          cp ${{ github.workspace }}/src/config/* ${{ github.workspace }}/public/feeds/
+      - name: Show directory
+        run: sudo apt-get install -y && tree ${{ github.workspace }}
+
+      # - name: Copy bridges & config
+      #   run: |
+      #     cp ${{ github.workspace }}/src/bridges/*.php ${{ github.workspace }}/public/feeds/bridges/
+      #     cp ${{ github.workspace }}/src/config/* ${{ github.workspace }}/public/feeds/
 
       - name: rsync
         uses: burnett01/rsync-deployments@5.2
