@@ -33,6 +33,10 @@ Das Composer `update-rss-bridge`-Skript lädt die neueste RSS-Bridge-Version her
 
 `composer run deploy-LIVE`
 
+### Secrets
+
+GitHub-Secrets werden mit [secrethubwarden](https://github.com/cstuder/secrethubwarden) von Bitwarden synchronisiert.
+
 ## Lizenz
 
 Der Code in diesem Repository unterliegt der [MIT License](LICENSE).

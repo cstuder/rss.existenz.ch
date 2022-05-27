@@ -1,7 +1,6 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 
 [system]
-
 ; Defines the timezone used by RSS-Bridge
 ; Find a list of supported timezones at
 ; https://www.php.net/manual/en/timezones.php
