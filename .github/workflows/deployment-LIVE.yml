@@ -16,8 +16,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           command: create-project
-          args: rss-bridge/rss-bridge public/feeds/
-          dev: no
+          args: rss-bridge/rss-bridge public/feeds/ --no-dev
 
       - name: Copy bridges & config
         run: |
