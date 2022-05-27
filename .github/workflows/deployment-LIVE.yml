@@ -16,12 +16,12 @@ jobs:
         uses: php-actions/composer@v6
         with:
           command: create-project
-          args: rss-bridge/rss-bridge public/feeds/ --no-dev
+          args: rss-bridge/rss-bridge ${{ env.GITHUB_WORKSPACE }}/public/feeds/ --no-dev
 
       - name: Copy bridges & config
         run: |
-          cp src/bridges/*.php public/feeds/bridges/
-          cp src/config/* public/feeds/
+          cp $GITHUB_WORKSPACE/src/bridges/*.php $GITHUB_WORKSPACE/public/feeds/bridges/
+          cp $GITHUB_WORKSPACE/src/config/* $GITHUB_WORKSPACE/public/feeds/
 
       - name: rsync
         uses: burnett01/rsync-deployments@5.2
