@@ -16,18 +16,12 @@ jobs:
         uses: php-actions/composer@v6
         with:
           command: create-project
-          only_args: -vvv rss-bridge/rss-bridge public/feeds/ --no-dev --prefer-dist
+          only_args: rss-bridge/rss-bridge public/feeds/ --no-dev --prefer-dist
 
-      - name: Show directory
-        run: sudo apt-get install -y && tree ${{ github.workspace }}
-
-      - name: Output
-        run: more ${{ github.workspace }}/output.log
-
-      # - name: Copy bridges & config
-      #   run: |
-      #     cp ${{ github.workspace }}/src/bridges/*.php ${{ github.workspace }}/public/feeds/bridges/
-      #     cp ${{ github.workspace }}/src/config/* ${{ github.workspace }}/public/feeds/
+      - name: Copy bridges & config
+        run: |
+          cp ${{ github.workspace }}/src/bridges/*.php ${{ github.workspace }}/public/feeds/bridges/
+          cp ${{ github.workspace }}/src/config/* ${{ github.workspace }}/public/feeds/
 
       - name: rsync
         uses: burnett01/rsync-deployments@5.2
