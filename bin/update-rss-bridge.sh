@@ -3,6 +3,10 @@ set -o errexit   # abort on nonzero exitstatus
 set -o nounset   # abort on unbound variable
 set -o pipefail  # don't hide errors within pipes
 
+# Update-Skript
+#
+# Änderungen an diesem Skript müssen im Deployment-Workflow parallel nachgeführt werden
+
 # Zielverzeichnis leeren
 rm -rf public/feeds/*
 
