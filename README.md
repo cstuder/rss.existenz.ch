@@ -29,6 +29,8 @@ Folgt irgendwann.
 
 Das Composer `update-rss-bridge`-Skript lädt die neueste RSS-Bridge-Version herunter und entpackt sie im `public/feeds`-Verzeichnis. Danach werden alle hier entwickelten Bridges aus `src/bridges` per Symlink hinzugefügt. Zusätzlich werden alle Config-Dateien aus `src/config` ins Root-Verzeichnis der RSS-Bridge verlinkt. (Siehe Skript [bin/update-rss-bridge.sh](bin/update-rss-bridge.sh)).
 
+Der Grund für das Ganze Theater ist, dass damit eine eigene Index-Seite gestaltet werden kann. Weil ich nicht ganz glücklich mit dem RSS-Bridge-Interface bin.
+
 ## Deployment
 
 `composer run deploy-LIVE`
