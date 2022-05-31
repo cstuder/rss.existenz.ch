@@ -6,8 +6,7 @@ class HauptstadtBeBridge extends BridgeAbstract
     const URI         = 'https://www.hauptstadt.be';
     const DESCRIPTION = 'Articles from the Swiss capital news website Hauptstadt.be';
     const MAINTAINER  = 'cstuder';
-    // TODO Change back to 600
-    const CACHE_TIMEOUT = 1; // 10min
+    const CACHE_TIMEOUT = 600; // 10min
 
     public function collectData()
     {
