@@ -23,7 +23,7 @@ Folgt irgendwann.
 ## Development
 
 - `composer run update-rss-bridge` (Einmalig oder nach Bedarf.)
-- `composer run serve` -> <http://localhost:8880>
+- `composer run serve` -> <http://localhost:8000>
 
 ### Struktur
 
