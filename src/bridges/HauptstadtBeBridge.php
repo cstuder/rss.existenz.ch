@@ -33,7 +33,9 @@ class HauptstadtBeBridge extends BridgeAbstract
                 $item['content'] = $article['lead'];
                 $item['uid'] = $article['id'];
 
-                // TODO Add image
+                if (isset($article['image']['url'])) {
+                    $item['enclosures'] = [$article['image']['url']];
+                }
 
                 $this->items[] = $item;
             }
