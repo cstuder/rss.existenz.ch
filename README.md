@@ -2,7 +2,7 @@
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-Handgemachte RSS-Feeds, angeboten von Existenz.ch, implementiert mit [RSS-Bridge](https://rss-bridge.github.io/rss-bridge/)
+Handgemachte inoffizielle RSS-Feeds, angeboten von Existenz.ch, implementiert mit [RSS-Bridge](https://rss-bridge.github.io/rss-bridge/)
 
 `LIVE`: <https://rss.existenz.ch>
 
