@@ -20,9 +20,9 @@ Paywall. Im Feed sind nur die Artikel-Anrisse zu lesen.
 
 Quelle: <https://www.meteoschweiz.admin.ch/home/aktuell/meteoschweiz-blog.html>
 
-Kein RSS-Feed vorhanden. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet. Allerdings müssen die effektiven Artikel-URLs aus den Mobile-Artikeln extrahiert werden. Auf den Mobile-Artikeln sind allerdings die Bilder nicht verlinkt. Der Aufruf der Desktop-Blog-Seite ist extrem langsam, deshalb wird er Mobile-Feed verwendet.
+Kein RSS-Feed vorhanden. Der Aufruf der Desktop-Blog-Seite ist extrem langsam, deshalb wird er Mobile-Feed verwendet. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet. Die effektiven Artikel-URLs müssen aus den Mobile-Artikeln extrahiert werden. Auf den Mobile-Artikeln sind allerdings die Bilder nicht verlinkt.
 
-Um die Artikel-IDs zu den Desktop-URLs zu übersetzen, muss jeder Mobile-Artikel einaml geöffnet werden. Die Zuweisung ID-zu-URL wird auf der Bridge gecachet.
+Um die Artikel-IDs zu den Desktop-URLs zu übersetzen, muss jeder Mobile-Artikel einmal geöffnet werden. Die Zuweisung ID-zu-URL wird auf der Bridge gecachet.
 
 Im Feed sind nur die Artikel-Anrisse zu lesen.
 
