@@ -28,7 +28,7 @@ Im Feed sind nur die Artikel-Anrisse zu lesen.
 
 ## Development
 
-- `composer run update-rss-bridge` (Einmalig oder nach Bedarf, z.B. nach der Erstellung einer neuen Bridge)
+- `composer run update-rss-bridge` (Einmalig oder nach Bedarf, z.B. nach der Erstellung einer neuen Bridge. `composer.lock`-Nachricht ignorieren.)
 - `composer run serve` -> <http://localhost:8000> bzw. <http://localhost:8000/feeds/> (Trailing Slash ist wichtig)
 
 ### Struktur

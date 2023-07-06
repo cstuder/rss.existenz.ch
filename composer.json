@@ -12,7 +12,10 @@
   "require": {},
   "scripts": {
     "update-rss-bridge": "bin/update-rss-bridge.sh",
-    "serve": "PHP_CLI_SERVER_WORKERS=10 php -S 127.0.0.1:8000 -t public",
+    "serve": [
+      "Composer\\Config::disableProcessTimeout",
+      "php -S 127.0.0.1:8000 -t public"
+    ],
     "deploy-LIVE": "git push . main:LIVE && git push origin LIVE"
   }
 }
