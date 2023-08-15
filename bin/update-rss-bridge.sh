@@ -8,7 +8,7 @@ set -o pipefail  # don't hide errors within pipes
 # Änderungen an diesem Skript müssen im Deployment-Workflow parallel nachgeführt werden
 
 # Zielverzeichnis leeren
-rm -rf public/feeds/*
+rm -rf public/feeds
 
 # RSS-Bridge installieren
 composer create-project rss-bridge/rss-bridge public/feeds/ --no-dev

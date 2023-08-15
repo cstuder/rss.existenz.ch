@@ -6,7 +6,7 @@ class HauptstadtBeBridge extends BridgeAbstract
     const URI         = 'https://www.hauptstadt.be';
     const DESCRIPTION = 'Articles from the Swiss capital news website Hauptstadt.be';
     const MAINTAINER  = 'cstuder';
-    const CACHE_TIMEOUT = 600; // 10min
+    const CACHE_TIMEOUT = 0; // 10min
 
     public function collectData()
     {
@@ -46,6 +46,7 @@ class HauptstadtBeBridge extends BridgeAbstract
      * 
      * Um die Query bei Änderungen vom Hauptstadt-CMS her zu aktualisieren, folgendermassen vorgehen:
      * 
+     * 0. Während der Entwicklung oben die Cache-Dauer auf 0 setzen.
      * 1. https://www.hauptstadt.be öffnen (Firefox)
      * 2. In der Netzwerkkonsole den POST-Request auf api.hauptstadt.be mit der grössten Antwort suchen.
      * 3. Rechtsklick -> Copy -> Copy POST data
@@ -56,7 +57,7 @@ class HauptstadtBeBridge extends BridgeAbstract
         $curl = curl_init();
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.hauptstadt.be/",
+            CURLOPT_URL => "https://api.hauptstadt.be/v1",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
