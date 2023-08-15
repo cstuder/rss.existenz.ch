@@ -20,7 +20,7 @@ Paywall. Im Feed sind nur die Artikel-Anrisse zu lesen.
 
 Quelle: <https://www.meteoschweiz.admin.ch/home/aktuell/meteoschweiz-blog.html>
 
-Kein RSS-Feed vorhanden. Der Aufruf der Desktop-Blog-Seite ist extrem langsam, deshalb wird er Mobile-Feed verwendet. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet. Die effektiven Artikel-URLs müssen aus den Mobile-Artikeln extrahiert werden. Auf den Mobile-Artikeln sind allerdings die Bilder nicht verlinkt.
+Kein RSS-Feed vorhanden. Der Aufruf der Desktop-Blog-Seite war früher extrem langsam, deshalb wird der Mobile-Feed verwendet. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet. Die effektiven Artikel-URLs müssen aus den Mobile-Artikeln extrahiert werden. Auf den Mobile-Artikeln sind allerdings die Bilder nicht verlinkt.
 
 Um die Artikel-IDs zu den Desktop-URLs zu übersetzen, muss jeder Mobile-Artikel einmal geöffnet werden. Die Zuweisung ID-zu-URL wird auf der Bridge gecachet.
 
@@ -35,7 +35,7 @@ Im Feed sind nur die Artikel-Anrisse zu lesen.
 
 Das Composer `update-rss-bridge`-Skript lädt die neueste RSS-Bridge-Version herunter und entpackt sie im `public/feeds`-Verzeichnis. Danach werden alle hier entwickelten Bridges aus `src/bridges` per Symlink hinzugefügt. Zusätzlich werden alle Config-Dateien aus `src/config` ins Root-Verzeichnis der RSS-Bridge verlinkt. (Siehe Skript [bin/update-rss-bridge.sh](bin/update-rss-bridge.sh)).
 
-Der Grund für das Ganze Theater ist, dass damit eine eigene Index-Seite gestaltet werden kann. Weil ich nicht ganz glücklich mit dem RSS-Bridge-Interface bin.
+Der Grund für das Ganze Theater ist, dass ich damit eine eigene Index-Seite gestalten kann. Mit dem original RSS-Bridge-Interface bin ich nicht ganz glücklich.
 
 ## Deployment
 
