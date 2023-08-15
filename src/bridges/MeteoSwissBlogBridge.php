@@ -26,7 +26,7 @@ class MeteoSwissBlogBridge extends BridgeAbstract
     const BLOG_INFO_URL = 'https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_{LANG}.json';
     const BLOG_ARTICLE_URL = 'https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/{ARTICLEID}.html';
     const BLOG_IDS_CACHE_EXPIRATION = 30 * 24 * 3600; // [30d]
-    const FAVICON     = 'https://www.meteoschweiz.admin.ch/etc.clientlibs/internet/clientlibs/base/resources/assets/images/favicon.ico';
+    const FAVICON     = 'https://www.meteoschweiz.admin.ch/static/favicons/favicon.ico';
 
     public function collectData()
     {
