@@ -18,11 +18,9 @@ Paywall. Im Feed sind nur die Artikel-Anrisse zu lesen.
 
 ### MeteoSchweiz Blog
 
-Quelle: <https://www.meteoschweiz.admin.ch/home/aktuell/meteoschweiz-blog.html>
+Quelle: <https://www.meteoschweiz.admin.ch/ueber-uns/meteoschweiz-blog.html>
 
-Kein RSS-Feed vorhanden. Der Aufruf der Desktop-Blog-Seite war früher extrem langsam, deshalb wird der Mobile-Feed verwendet. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet. Die effektiven Artikel-URLs müssen aus den Mobile-Artikeln extrahiert werden. Auf den Mobile-Artikeln sind allerdings die Bilder nicht verlinkt.
-
-Um die Artikel-IDs zu den Desktop-URLs zu übersetzen, muss jeder Mobile-Artikel einmal geöffnet werden. Die Zuweisung ID-zu-URL wird auf der Bridge gecachet.
+Kein RSS-Feed vorhanden. Der Aufruf der Desktop-Blog-Seite war früher extrem langsam, deshalb wird der Mobile-Feed verwendet. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet, ab November 2023 sogar mit den effektiven Artikel-URLs.
 
 Im Feed sind nur die Artikel-Anrisse zu lesen.
 
