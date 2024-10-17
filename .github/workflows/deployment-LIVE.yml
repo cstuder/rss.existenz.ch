@@ -27,7 +27,7 @@ jobs:
         uses: burnett01/rsync-deployments@7.0.1
         with:
           path: public/
-          switches: -avzr
+          switches: -avzr --delete
           # Remote Pfad wird durch rrsync auf der Serverseite kontrolliert
           remote_path: /
           remote_host: ${{ secrets.RSS_SSH_HOST }}
