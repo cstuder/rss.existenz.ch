@@ -8,14 +8,6 @@ Handgemachte inoffizielle RSS-Feeds, angeboten von Existenz.ch, implementiert mi
 
 ## Feeds
 
-### Hauptstadt.be
-
-Quelle: <https://www.hauptstadt.be>
-
-Kein RSS-Feed vorhanden. Content wird von einem CMS angeliefert, welches auf GraphQL basiert. Request ist kopiert von der aktuellen Index-Seite.
-
-Paywall. Im Feed sind nur die Artikel-Anrisse zu lesen.
-
 ### MeteoSchweiz Blog
 
 Quelle: <https://www.meteoschweiz.admin.ch/ueber-uns/meteoschweiz-blog.html>
@@ -23,6 +15,12 @@ Quelle: <https://www.meteoschweiz.admin.ch/ueber-uns/meteoschweiz-blog.html>
 Kein RSS-Feed vorhanden. Der Aufruf der Desktop-Blog-Seite war früher extrem langsam, deshalb wird der Mobile-Feed verwendet. In der Mobile-App gibt es ein [JSON](https://s3-eu-central-1.amazonaws.com/app-prod-static-fra.meteoswiss-app.ch/v1/blog/blog_overview_de.json) welches die aktuelle Artikel auflistet, ab November 2023 sogar mit den effektiven Artikel-URLs.
 
 Im Feed sind nur die Artikel-Anrisse zu lesen.
+
+### Hauptstadt.be
+
+Deprectated: Seit Juli 2025 hat Hauptstadt.be einen eigenen RSS-Feed: <https://www.hauptstadt.be/api/rss-feed>.
+
+Quelle: <https://www.hauptstadt.be>
 
 ## Development
 
